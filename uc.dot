@@ -3,7 +3,7 @@ digraph {
     nodesep = 1.0;
     overlap = false;
     node [shape = none, fontname = "Helvetica", labelloc = b];
-    edge [style=bold];
+    edge [style=bold, fontname = "Helvetica"];
 
     ffx5 [label="FF-X5 Prototype Core Fighter"];
         ffx5 -> ffx7 [label="Developed into", color=blue];
