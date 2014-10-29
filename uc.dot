@@ -2,12 +2,10 @@ digraph {
     imagepath = "images/";
     nodesep = 1.0;
     overlap = false;
+    node [shape = none, fontname = "Helvetica", labelloc = b];
+    edge [style=bold];
 
-    node [shape = none, fontname = "Helvetica", labelloc = b]
-
-    edge [style=bold]
-
-    ffx5 [label="FF-X5 Prototype Core Fighter"]
+    ffx5 [label="FF-X5 Prototype Core Fighter"];
         ffx5 -> ffx7 [label="Developed into", color=blue];
         ffx5 -> rx781 [label="Used by", color=red];
 
@@ -38,8 +36,9 @@ digraph {
     rx75 [label="RX-75 Guntank Mass Production Type", image="rx-75.png"];
 
     d50c [label="D-50C Loto", image="d-50c.png"];
+        d50c -> f50d [label="Developed into", color=blue];
 
-    f50d [label="F-50D Guntank R-44"]
+    f50d [label="F-50D Guntank R-44"];
 
     rmv1 [label="RMV-1 Guntank II"];
 
@@ -51,7 +50,7 @@ digraph {
         rx772 -> rx786 [label="Developed into", color=blue];
         rx772 -> rgc801 [label="Developed into", color=blue];
 
-    rx781 [label="RX-78-1 Prototype Gundam", image="rx-78-1.png"]
+    rx781 [label="RX-78-1 Prototype Gundam", image="rx-78-1.png"];
         rx781 -> rx782 [label="Developed into", color=blue];
 
     rx782 [label="RX-78-2 Gundam", image="rx-78-2.png"];
@@ -83,9 +82,9 @@ digraph {
         rx78nt1fa -> rgc83 [label="Developed into", color=blue];
 
     pf781 [label="PF-78-1 Perfect Gundam", image="pf-78-1.png"];
-        pf781 -> fa781;
+        pf781 -> fa781 [label="Developed into", color=blue];
 
-    fa781 [label="FA-78-1 Gundam Full Armor Type"];
+    fa781 [label="FA-78-1 Gundam Full Armor Type", image="fa-78-1.png"];
 
     fa783 [label="FA-78-3 Full Armor 7th Gundam", image="fa-78-3.png"];
         fa783 -> hfa783 [label="Developed into", color=blue];
