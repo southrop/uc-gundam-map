@@ -1,0 +1,106 @@
+digraph {
+    imagepath = "images/";
+    nodesep = 1.0;
+    overlap = false;
+
+    node [shape = none, fontname = "Helvetica", labelloc = b]
+
+    edge [style=bold]
+
+    ffx5 [label="FF-X5 Prototype Core Fighter"]
+        ffx5 -> ffx7 [label="Developed into", color=blue];
+        ffx5 -> rx781 [label="Used by", color=red];
+
+    ffx7 [label="FF-X7 Core Fighter", image="ff-x7.png"]
+        ffx7 -> ffx7bst [label="Developed into", color=blue];
+        ffx7 -> rx754 [label="Used by", color=red];
+        ffx7 -> rx772 [label="Used by", color=red];
+        ffx7 -> rx782 [label="Used by", color=red];
+
+    ffx7bst [label="FF-X7-Bst Core Booster", image="ff-x7-bst.png"];
+        ffx7bst -> ffb7bst [label="Developed into", color=blue];
+        ffx7bst -> ffx7bstii [label="Developed into", color=blue];
+
+    ffx7bstii [label="FF-X7Bst-II Core Booster II Interceptor Type", image="ff-x7bst-ii.png"];
+
+    ffb7bst [label="FFB-7Bst Jet Core Booster II", image="ffb-7bst.png"];
+
+    rx754 [label="RX-75-4 Guntank", image="rx-75-4.png"];
+        rx754 -> rtx400 [label="Developed into", color=blue];
+        rx754 -> d50c [label="Developed into", color=blue];
+        rx754 -> rx75 [label="Developed into", color=blue];
+        rx754 -> rx771a [label="Developed into", color=blue];
+        rx754 -> rmv1 [label="Developed into", color=blue];
+
+    rtx400 [label="RTX-400 Ground Assault Type Guntank", image="rtx-440.png"];
+        rtx400 -> d50c [label="Developed into", color=blue];
+
+    rx75 [label="RX-75 Guntank Mass Production Type", image="rx-75.png"];
+
+    d50c [label="D-50C Loto", image="d-50c.png"];
+
+    f50d [label="F-50D Guntank R-44"]
+
+    rmv1 [label="RMV-1 Guntank II"];
+
+    rx771a [label="RX-77-1A Guncannon A", image="rx-77-1a.png"];
+        rx771a -> rx772 [label="Developed into", color=blue];
+
+    rx772 [label="RX-77-2 Guncannon", image="rx-77-2.png"];
+        rx772 -> rx781 [label="Developed into", color=blue];
+        rx772 -> rx786 [label="Developed into", color=blue];
+        rx772 -> rgc801 [label="Developed into", color=blue];
+
+    rx781 [label="RX-78-1 Prototype Gundam", image="rx-78-1.png"]
+        rx781 -> rx782 [label="Developed into", color=blue];
+
+    rx782 [label="RX-78-2 Gundam", image="rx-78-2.png"];
+        rx782 -> fa781 [label="Developed into", color=blue];
+        rx782 -> rx783 [label="Developed into", color=blue];
+        rx782 -> rx784 [label="Developed into", color=blue];
+        rx782 -> rx785 [label="Developed into", color=blue];
+        rx782 -> rx786 [label="Developed into", color=blue];
+        rx782 -> rx78nt1 [label="Developed into", color=blue];
+        rx782 -> pf781 [label="Developed into", color=blue];
+
+    rx783 [label="RX-78-3 Gundam \"G-3\"", image="rx-78-3.png"];
+
+    rx784 [label="RX-78-4 Gundam Unit 4 \"G04\""];
+
+    rx785 [label="RX-78-5 Gundam Unit 5 \"G05\""];
+
+    rx786 [label="RX-78-6 Mudrock Gundam", image="rx-78-6.png"];
+        rx786 -> rx787 [label="Developed into", color=blue];
+
+    rx787 [label="RX-78-7 7th Gundam", image="rx-78-7.png"];
+        rx787 -> fa783 [label="Developed into", color=blue];
+
+    rx78nt1 [label="RX-78NT-1 Gundam \"Alex\"", image="rx-78nt-1.png"];
+        rx78nt1 -> rx78nt1fa [label="Variant", color=green];
+        rx78nt1 -> rx787 [label="Developed into", color=blue];
+
+    rx78nt1fa [label="RX-78NT-1FA Full Armor Gundam \"Alex\"", image="rx-78nt-1fa.png"];
+        rx78nt1fa -> rgc83 [label="Developed into", color=blue];
+
+    pf781 [label="PF-78-1 Perfect Gundam", image="pf-78-1.png"];
+        pf781 -> fa781;
+
+    fa781 [label="FA-78-1 Gundam Full Armor Type"];
+
+    fa783 [label="FA-78-3 Full Armor 7th Gundam", image="fa-78-3.png"];
+        fa783 -> hfa783 [label="Developed into", color=blue];
+
+    hfa783 [label="HFA-78-3 Heavy Full Armor 7th Gundam", image="hfa-78-3.png"];
+
+    rgc801 [label="RGC-80-1 GM Cannon Test Type", image="rgc-80-1.png"];
+        rgc801 -> rgc80 [label="Developed into", color=blue];
+
+    rgc80 [label="RGC-80 GM Cannon", image="rgc-80.png"];
+        rgc80 -> rgc80s [label="Variant", color=green];
+        rgc80 -> rgc83 [label="Developed into", color=blue];
+
+    rgc80s [label="RGC-80S GM Cannon Space Assault Type", image="rgc-80s.png"]
+
+    rgc83 [label="RGC-83 GM Cannon II"]
+
+}
