@@ -1,6 +1,7 @@
 digraph {
     imagepath = "images/";
     nodesep = 1.0;
+    splines = true;
     overlap = false;
     node [shape = none, fontname = "Helvetica", labelloc = b];
     edge [style=bold, fontname = "Helvetica"];
@@ -42,6 +43,13 @@ digraph {
 
     rmv1 [label="RMV-1 Guntank II"];
 
+    rx0 [label="RX-0 Unicorn Gundam"];
+        rx0 -> rx0b [label="Sister Units", color=green, dir=both];
+        rx0 -> rx0p [label="Developed into", color=blue];
+    rx0b [label="RX-0 Unicorn Gundam 02 Banshee"];
+        rx0b -> rx0p [label="Developed into", color=blue];
+    rx0p [label="RX-0 Unicorn Gundam 03 Phenex"];
+
     rx771a [label="RX-77-1A Guncannon A", image="rx-77-1a.png"];
         rx771a -> rx772 [label="Developed into", color=blue];
 
@@ -60,13 +68,21 @@ digraph {
         rx782 -> rx785 [label="Developed into", color=blue];
         rx782 -> rx786 [label="Developed into", color=blue];
         rx782 -> rx78nt1 [label="Developed into", color=blue];
+        rx782 -> rx78sp [label="Developed into", color=blue];
         rx782 -> pf781 [label="Developed into", color=blue];
 
+        rx782 -> rgm79 [label="Developed into", color=blue];
+
     rx783 [label="RX-78-3 Gundam \"G-3\"", image="rx-78-3.png"];
+        rx783 -> fa781b [label="Developed into", color=blue];
 
-    rx784 [label="RX-78-4 Gundam Unit 4 \"G04\""];
+    rx784 [label="RX-78-4 Gundam Unit 4 \"G04\"", image="rx-78-4.png"];
+        rx784 -> rx784bst [label="Developed into", color=blue];
+    rx784bst [label="RX-78-4[Bst] Gundam Unit 4 \"G04\" Boosted", image="rx-78-4bst.png"]
 
-    rx785 [label="RX-78-5 Gundam Unit 5 \"G05\""];
+    rx785 [label="RX-78-5 Gundam Unit 5 \"G05\"", image="rx-78-5.png"];
+        rx785 -> rx785bst [label="Developed into", color=blue];
+    rx785bst [label="RX-78-5[Bst] Gundam Unit 5 \"G05\" Boosted", image="rx-78-5bst.png"]
 
     rx786 [label="RX-78-6 Mudrock Gundam", image="rx-78-6.png"];
         rx786 -> rx787 [label="Developed into", color=blue];
@@ -81,10 +97,18 @@ digraph {
     rx78nt1fa [label="RX-78NT-1FA Full Armor Gundam \"Alex\"", image="rx-78nt-1fa.png"];
         rx78nt1fa -> rgc83 [label="Developed into", color=blue];
 
+    rx78sp [label="RX-78SP Gunner Gundam", image="rx-78sp.png"];
+
     pf781 [label="PF-78-1 Perfect Gundam", image="pf-78-1.png"];
         pf781 -> fa781 [label="Developed into", color=blue];
 
     fa781 [label="FA-78-1 Gundam Full Armor Type", image="fa-78-1.png"];
+        fa781 -> fa781b [label="Developed into", color=blue];
+        fa781 -> fa782 [label="Developed into", color=blue];
+
+    fa781b [label="FA-78-1B Gundam Full Armor Type-B", image="fa-78-1b.png"]
+
+    fa782 [label="FA-78-2 Heavy Gundam", image="fa-78-2.png"];
 
     fa783 [label="FA-78-3 Full Armor 7th Gundam", image="fa-78-3.png"];
         fa783 -> hfa783 [label="Developed into", color=blue];
@@ -98,8 +122,10 @@ digraph {
         rgc80 -> rgc80s [label="Variant", color=green];
         rgc80 -> rgc83 [label="Developed into", color=blue];
 
-    rgc80s [label="RGC-80S GM Cannon Space Assault Type", image="rgc-80s.png"]
+    rgc80s [label="RGC-80S GM Cannon Space Assault Type", image="rgc-80s.png"];
 
-    rgc83 [label="RGC-83 GM Cannon II"]
+    rgc83 [label="RGC-83 GM Cannon II"];
 
+    rgm79 [label="RGM-79 GM", image="rgm-79.png"];
+        rgm79 -> rgc801 [label="Developed into", color=blue];
 }
